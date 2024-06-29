@@ -1,0 +1,21 @@
+$light: #E0ECFFCC;
+$font-700:700;
+$font-600:600;  
+$font-500:500;  
+$font-400:400; 
+$font-300:300; 
+$font-200:200;
+
+$grid-breakpoints: (
+  xs: 370px,
+  sm: 576px,
+  md: 768px,
+  pads: 769px,
+  lg: 992px,
+  ipad: 1024.5px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1600px,
+);
+
+@import "breakpoints";

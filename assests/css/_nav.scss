@@ -1,0 +1,87 @@
+.header{
+    padding: 30px 24px;
+    overflow: hidden;
+    @include media-breakpoint-down(sm){
+        padding: 16px;
+    }
+    .meeting-name{
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.4px;
+        color: rgba(245, 249, 255, 0.9490196078);
+        position: absolute;
+        left: 118px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        // display: flex;
+        display: block;
+        align-items: center;
+        padding-left: 24px;
+        border-left: 1px solid #2D3440;
+        height: max-content;
+        width: 400px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @include media-breakpoint-down(ipad){
+            width: 200px;
+        }
+        @include media-breakpoint-down(sm){
+            left: 72px;
+            padding-left: 14px;
+            width: 200px;
+        }
+    }
+    .btn.btn-red{
+        position: absolute;
+        right: 24px;
+        top: 20px;
+        @include media-breakpoint-down(md){
+            font-size: 0 !important;
+            padding: 0;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+            span{
+                margin-right: 0;
+            }
+        }
+        @include media-breakpoint-down(sm){
+            top: 8px;
+            right: 16px;
+        }
+    }
+    .logo-wrap {
+        position: absolute;
+        left: 24px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        display: grid;
+        align-items: center;
+        @include media-breakpoint-down(md){
+            position: relative;
+            left: 0;
+        }
+        @include media-breakpoint-down(sm){
+           
+            
+            svg{
+                width: 43px;
+            }
+        }
+    }
+    p{
+        color: #F5F9FFF2;
+        font-weight: 500;
+        @include media-breakpoint-down(md){
+            display: none;
+        }
+    }
+}
